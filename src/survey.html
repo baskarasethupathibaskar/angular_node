@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=button], input[type=submit], input[type=reset] {
+          background-color: #0011ff;
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+    <form>
+       
+        <div><br>
+            <label name="name">
+                NAME:
+            </label>
+            <input type="text" name="txtusername" placeholder="enter your name here" >
+        </div>
+        
+        <div><br>
+            <label name="txtage">
+             AGE:
+            </label>
+            <input type="text" name="age" placeholder="enter your age here">
+        </div>
+        <div><br>
+            <label name="txtgender">
+                GENDER:
+           <br> <input type="radio"  name="male" value="male">
+            <label for="html">Male</label><br>
+            <input type="radio"  name="female" value="female">
+            <label for="css">Female</label><br>
+        </div>
+        <div><br>
+            <label name="txtskill">
+                QUALIFICATION:
+           <br> <input type="checkbox"  name="BE" value="male">
+            <label for="html">BE</label>
+            <input type="checkbox"  name="BSC" value="female">
+            <label for="css">BSC</label>
+            <input type="checkbox"  name="IT" value="female">
+            <label for="css">IT</label>
+        </div>
+        
+        <div><br>
+            <label name="txtage">
+             Date Of Birth:
+            </label>
+            <input type="date" name="date" >
+        </div>
+        <div><br>
+            <label name="txtmaritalstatus">
+                MARITAL STATUS:
+            <br><select name="Marital Status">
+                <option name="selecet">select</option>
+                <option name="married">Married</option>
+                <option name="unmarried">UnMarried</option>
+
+            </select>
+        </label>
+        </div>
+        <div><br>
+            <label name="txtage">
+                EMAIL:
+            </label>
+            <input type="email" name="mail" placeholder="example@gmail.com">
+        </div>
+        <div><br>
+            <label name="txtage">
+                PHONE NO:
+            </label>
+            <input type="text" name="phone no" placeholder="#### ### ###">
+        </div>
+        <div> <br>
+            <label name="home">
+                ADDRESS:
+            </label>
+            <input type="text" name="address" placeholder="enter your native here" maxlength="500">
+        </div>
+        <div> <br>
+            <label name="home">
+                CITY:
+            </label>
+            <input type="text" name="city" placeholder="enter your city here" maxlength="500">
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </head>
+        
+        
+
+    </form>
+    
+</body>
+</html>
