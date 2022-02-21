@@ -6,35 +6,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product_Landing</title>
+    <style>
+        body,
+        html {
+            background-color: powderblue;
+            font-family: 'Inter', sans-serif;
+            /*max-width:360px;*/
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            align-items: center;
+            background: powderblue;
+            display: flex;
+            height: 200px;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: none;
+            font-size: 12px;
+            transition: all 0.4s;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: #16172e;
+            text-align: center;
+            /* padding: 10px 20px;*/
+            text-decoration: none;
+            transition: all 0.4s;
+
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            color: #0073e6;
+        }
+
+        li.dropdown {
+            display: inline-block;
+            transition: all 0.4s;
+        }
+
+        ul li+li:before {
+            padding: 10px;
+            color: #7D8597;
+            font-weight: 400;
+            content: '>';
+        }
+
+        .text {
+            font-size: 35px;
+            font-weight: 700;
+            color: #16172e;
+            text-align: left;
+        }
+
+        .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .span {
+            vertical-align: middle;
+        }
+
+        /* Container holding the image and the text */
+        .container {
+            position: relative;
+        }
+        
+        /* Bottom right text */
+        .text-block {
+            position: absolute;
+            bottom: -40px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .p1 {
+            width: 300px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+
+        .container1 {
+            position: relative;
+        }
+        .text-block1 {
+            position: absolute;
+            bottom: -40px;
+            left: 10px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        .item {
+            width: 200px;
+            text-align: center;
+            display: block;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin-right: 22px;
+            margin-bottom: 1px;
+            float: left;
+        }
+        .h1 {text-align: center;}
+    </style>
 </head>
 
 <body style="background-color:powderblue;">
-    <h1>Oppo Best One !!</h1>
-    <nav id="nav-bar">
-        <ul>
-            <li><a class="nav-link" href="https://gadgets.ndtv.com/oppo-a3s-5540">Features</a></li>
-            <li><a class="nav-link" href="https://support.oppo.com/in/answer/?aid=neu5689">Performance</a></li>
-            <li><a class="nav-link"
-                    href="https://www.google.com/aclk?sa=l&ai=DChcSEwjWiLrvson2AhWVCysKHWOABJIYABARGgJzZg&ae=2&sig=AOD64_3E67qUOl_4Zx01wU7J8XvNwPFw2A&q&adurl&ved=2ahUKEwjR37Lvson2AhXiSmwGHXKxB8cQ0Qx6BAgCEAE">Pricing</a>
-            </li>
-        </ul>
-    </nav>
-    <img alt="oppo" src="../images/oppoa9.jpg">
-    <div class="item">
-        <img src=""/>
-        <span class="caption">oppo A9 (15,000 rs)</span>
-    </div><br>
-    <img alt="oppo" src="../images/oppof11.jpg">
-    <div class="item">
-        <img src=""/>
-        <span class="caption">oppo A11 (18,000 rs)</span>
-    </div><br>
-    <img alt="oppo" src="../images/oppoa12.jpg">
-    <div class="item">
-        <img src=""/>
-        <span class="caption">oppo F17 (25,000 rs)</span>
+    <h1 class="h1"> OPPO BEST ONE !!</h1>
+
+    <div class="container">
+        <div class="text-block">
+            <h4>OPPO</h4>
+            <p>Best a Wonderful Smartphone</p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text-block1">
+            <h4>BUY OPPO</h4>
+            <p>Spend points as cash
+                Save up to 50%</p>
+        </div>
     </div>
 
+    <div class="section">
+        <ul>
+            <li class="text symbol"><a href="./product_landing.html">Home</a></li>
+
+
+            <li class="text symbol">
+                <a href="https://gadgets.ndtv.com/oppo-a3s-5540" target="__top">Features</a>
+
+            </li>
+            <li class="text symbol">
+                <a href="https://support.oppo.com/in/answer/?aid=neu5689" target="__top">Performance </a>
+            </li>
+            <li class="text symbol">
+                <a class="nav-link"
+                    href="https://www.google.com/aclk?sa=l&ai=DChcSEwjWiLrvson2AhWVCysKHWOABJIYABARGgJzZg&ae=2&sig=AOD64_3E67qUOl_4Zx01wU7J8XvNwPFw2A&q&adurl&ved=2ahUKEwjR37Lvson2AhXiSmwGHXKxB8cQ0Qx6BAgCEAE"
+                    target="__top">Pricing</a>
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <img alt="oppo" src="../images/oppoa9.jpg" width="160" height="200">
+        <a href="https://www.oppo.com/in/smartphone-a9-en/" target="__top">oppo A9</a></div>
+    <div class="item">
+        <img alt="oppo" src="../images/reno.jpg" width="160" height="200">
+        <a href="https://www.oppo.com/en/smartphones/series-reno/" target="__top">oppo reno</a></div>
+    </div>
+    <div class="item">
+        <img alt="oppo" src="../images/oppoa12.jpg" width="160" height="200">
+        <a href="https://www.oppo.com/in/smartphones/series-f/f17-pro/" target="__top">oppo F17</a></div>
+    </div>
+    <div class="item">
+        <img alt="oppo" src="../images/oppo a3s.jpg" width="160" height="200">
+        <a href="https://www.gsmarena.com/oppo_a3s-9269.php" target="__top">oppo a3s</a></div>
+    </div>
+    <div class="item">
+        <img alt="oppo" src="../images/oppo f19.jpg" width="160" height="200">
+        <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiRuNzV5ov2AhVymWYCHURrAeIYABAAGgJzbQ&ae=2&sig=AOD64_1tFFLcpa49dyn8zIzNhyEbBsA8Bg&q&adurl&ved=2ahUKEwjbi9TV5ov2AhX44zgGHXF9CHUQ0Qx6BAgDEAM" target="__top">oppo F19</a></div>
+    </div>
+    <div class="item">
+        <img alt="oppo" src="../images/oppo z12.jpg" width="160" height="200">
+        <a href="https://gadgets360.com/oppo-reno-z-price-in-india-13105" target="__top">oppo renoZ</a></div>
+    </div>
+
+    
 </body>
 
 </html>
