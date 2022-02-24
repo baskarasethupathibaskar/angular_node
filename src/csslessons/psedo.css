@@ -6,7 +6,7 @@ a:link{
 
 a:visited
 {
-    color: aquamarine;
+    color: rgb(37, 15, 68);
 }
 
 a:hover{
@@ -15,7 +15,7 @@ a:hover{
 
 a:active
 {
-
+    color: red;
 }
 
 .dropdown-content a{
