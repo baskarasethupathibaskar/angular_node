@@ -1,95 +1,62 @@
-:root{
-    --main-font:"Red Hat Display", sans-serif;
-    --background-color: hsl(225,100%,94%);
-    --container-box-shadow: -2x 10px 24px -11px rgba(0,0,0,0.62);
-    --btn-box-shadow:5px 10px 20px hsl(245,75%,90%);
-    --dark-blue:hsl(223,47%,23%);
-    --desaturated-blue:hsl(224,23%,55%);
-    --very-pale-blue:hsl(225,100%,98%);
-    --bright-blue:hsl(245,75%,52%);
-    --light-grey:rgb(136,133,133);
-    --white:rgb(255,255,255);
-    --red:red;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-.order-center-container{
-    position: relative;
-    width: 150;
-    max-width: 17.3rem;
-    height: 100%;
-    max-height: 46rem;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%
+}
+body {
+    background-color: #d5e1ef;
+    font-size: 1.5rem;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    background-color: rgb(252, 245, 245);
-    border-radius: 25px;
-    text-align: center;
-    overflow: hidden;
-    -webkit-box-shadow:var(--container-box-shadow);
-    -moz-box-shadow:var(--container-box-shadow);
-    box-shadow: var(--container-box-shadow);
-}
-
-
-.order-title-container{
-    width: 80%;
-    height: 100%;
-    max-height: 14rem;
-    font-family: var(--main-font);
-    color: var(--dark-blue);
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 3rem;
-}
-
-img {
-	width: 260px;
-	border-radius: 20px;
-    min-height: 14rem;
-    background-position: center center;
-    background-size: cover;
+    align-items: center; 
+    
    
 }
 
-
-#text-description {
-    font-weight: 700;
-}
-
-#text-scanQR {
-    font-weight: 400;
-}
-
-.order-title-container{
-    width: 80%;
-    height: 100%;
-    max-height: 14rem;
-    font-family: var(--main-font);
-    color: var(--dark-blue);
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 3rem;
-    font-weight: 700;
-
-}
-
-.order-header-image{
-    width: 100;
-    height: 100;
-    min-height: 15rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: center;
+.card {
+    width: 300px;
+    height: 460px;
+    background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    overflow: hidden;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.1rem 0.9rem hsl(220, 15%, 55%);
+
 }
 
 
-
-body {
-    background-color: hsl(212, 45%, 89%);
+.card img {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+ 
+}
+h2, p {
+    margin-top: 15px;
     text-align: center;
 }
 
+h2 {
+    color:  hsl(218, 44%, 22%);
+}
+p {
+    color: hsl(220, 15%, 55%);
+}
+
+@media (max-width: 375px) {
+   .container .card {
+        width: 90%;
+        height: 65%;
+    }
+}
