@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--main-BG);
+}
+
+p {
+    font-size: 16px;
+}
+
+/* main */
+#main-card {
+    /* sizes */
+    width: 300px;
+    height: auto;
+
+    /* box model */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 25px;
+    border-radius: 15px;
+
+    /* colors */
+    background-color: var(--card-BG);   
+}
+
+
+/* card image */
+#main-card #card-image > img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* card content */
+#main-card #card-content {
+    padding: 15px 0;
+    line-height: 1.7;
+}
+
+/* Heading */ 
+#main-card #card-content #card-title {
+    color: var(--white);
+}
+
+#main-card #card-content #card-title,
+#main-card #card-content #card-text {
+    margin-bottom: 8px;
+}
+
+/* Paragraph */
+#main-card #card-content #card-text {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+/* Ethereum info */
+#main-card #ethereum-info {
+    /* box model */
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-card #ethereum-info > div {
+    /* box model */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+#main-card #ethereum-info > div > img {
+    height: 20px;
+}
+
+#main-card #ethereum-info > div > p {
+    color: var(--cyan);
+}
+
+#main-card #ethereum-info > div:first-of-type p {
+    font-weight: 600;
+}
+
+#main-card #ethereum-info > div:last-of-type p {
+    font-weight: 300;
+}
+
+
+
+/* line */
+#line {
+    border: 1px solid var(--line);
+}
+
+
+#main-card #card-person {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+}
+
+#main-card #card-person #person-image > img {
+    width: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+#main-card #card-person #person-info > p {
+    margin-left: 15px;
+    color: var(--soft-blue);
+}
+
+#main-card #card-person #person-info > p > span {
+    color: var(--white);
+    font-weight: 300;
+}

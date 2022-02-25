@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+  <link rel="stylesheet" href="tipcalc.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <h1 class="logo">SPLI<br>TTER</h1>  
+
+  <main class="container">
+
+    <!-- First Section  -->
+
+    <div class="first-section">
+      <div class="bill-wrapper">
+        <label for="bill">Bill</label>
+        <div class="bill-input-wrapper">
+          <i class="fas fa-dollar"></i>
+          <input type="number" value="2">
+        </div>
+      </div>
+      <div class="tip-wrapper">
+        <h2 class="title">Select Tip %</h2>
+        <div class="tip-percent-wrapper">
+          <div class="button one">
+            5%
+          </div>
+          <div class="button two">
+            10%
+          </div>
+          <div class="button three">
+            15%
+          </div>
+          <div class="button four">
+            25%
+          </div>
+          <div class="button five">
+            50%
+          </div>
+          <div class="button custom">
+            custom
+          </div>
+        </div>
+      </div>
+
+      <div class="people-wrapper">
+        <label for="people">Number of people</label>
+        <div class="people-input-wrapper">
+          <i class="fas fa-user"></i>
+          <input type="number" value="3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Section  -->
+
+    <div class="second-section">
+      <div class="tip-amount-wrapper">
+        <div class="text-wrapper">
+          <h3 class="heading">Tip Amount</h3>
+          <p class="person">/ person</p>
+        </div>
+        <p class="tip-amount">$<span class="price">4.27</span></p>
+      </div>
+
+      <div class="total-amount-wrapper">
+        <div class="text-wrapper">
+          <h3 class="heading">Total</h3>
+          <p class="person">/ person</p>
+        </div>
+        <p class="tip-amount">$<span class="price">32.79</span></p>
+      </div>
+
+      <div class="reset-button">
+        <a href="#!" class="btn">RESET</a>
+      </div>
+    </div>
+  </main>
+  
+</body>
+<script src="main.js">
+</script>
+</html>
