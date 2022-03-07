@@ -1,215 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        body{
+ margin: 0%;
+ padding: 0%;
+ background-image: url(./images/laptop.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100%;
+ width: 100%;
+ height: 100vh;
 
-        .column {
-            float: left;
-            width: 20%;
-            padding: 15px;
-        }
+}
 
-        body {
-            height: 100%;
-            background-image: url('images/bass.jpg');
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+h1{
+    margin-top: 40px;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    opacity: 100%;
+    font-family: 'Times New Roman', Times, serif;
 
-        }
-        ul {
-            list-style-type: square;
+}
+h1:hover{
+  font-size: 45px;
 
-        }
+}
 
-        
+.p1{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    opacity: 100%;
 
-        h1{
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        h2{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: 700;
-        }
-        
+}
 
-        div.transbox {
-            /* margin-left: 20%;
-  margin-right: 20%;
-  margin-top:02%; */
-            background-color: rgb(253, 251, 251);
-            border: 1px solid black;
-            opacity: 0.6;
-        }
 
-        div.transbox p {
-            font-weight: bolder;
-            margin: 0;
-            color: #000000;
-        }
+a{
+    text-decoration: none;
+    color: white;
+    
+}
 
-        a:visited {
-            color: blue;
-            background-color: transparent;
-            text-decoration: none;
-        }
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    opacity: 50%;
 
-        a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: underline;
-        }
+  }
+  
+  .topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.img1{
+  padding-left: 20px;
+}
+
+.content{
+    display: flex;
+    padding: 80px 10%;
+    justify-content: space-between;
+    color: white;
+}
     </style>
 </head>
-
 <body>
+  
+    <div class="main">
+        <div class="topnav">
+            <a href="#">CHALLENGES</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+          </div> </div>
+        <h1>Welcome  To  MyPage</h1>
+        <p class="p1">LEARN HTML CSS & JavaScript</p>
 
-    <header style="text-align: center;">
-        <div class="transbox">
-            <h1>---MENU---</h1>
-        </div>
-    </header>
-    <section style="background-color:rgb(221, 18, 18);">
-
-
+        <button class="button"><a href="index1.html">Click Here</a></button>
+        <table>
+        <div class="column">
+        <a href="index.html"><img  src="../../angular_node/images/html logo.png" height="60" width="80" ></a>
+        <a href="index.html"><img src="../../angular_node/images/css logo.png" height="60" width="50" ></a></div>
         <div class="row">
-            <div class="column">
-                <div class="transbox">
-                    <h2>HTML-LESSONS</h2>
-                    <p></div>
-                <div class="transbox">
+        <a href="index.html"><img  class="img1" src="../../angular_node/images/js6.png"  height="60" width="90"></a> </div>
+        </div></div>
 
-                    <ul>
-                        <li><a href="./src/pagea.html">Pagea</a></li>
-                        <li> <a href="./src/pageb.html">Pageb</a></li>
-                        <li><a href="./src/pagec.html">Pagec</a></li>
-                        <li><a href="./src/paged.html">Paged</a></li>
-                        <li><a href="./src/pagee.html">Pagee</a></li>
-                        <li><a href="./src/pagef.html">Pagef</a></li>
-                        <li><a href="./src/pageg.html">Pageg</a></li>
-                        <li><a href="./src/pageh.html">Pageh</a></li>
-                        <li><a href="./src/pagei.html">Pagei</a></li>
-                        <li><a href="./src/login.html">login</a></li>
-                        <li><a href="./src/tribute.html">Tribute</a></li>
-                        <li><a href="./src/survey.html">Survey</a></li>
-                        <li><a href="./src/grand-child-frame.html">Grand Child</a></li>
-                        <li> <a href="./src/child-frame.html">Child frame</a></li>
-                        <li><a href="./src/inputtypes.html">Input Types</a></li>
-                        <li><a href="./src/parent.html">Parent</a></li>
-                        <li><a href="./src/target.html">Target</a></li>
-                        <li><a href="./src/radio.html">Radio</a> </li>
-                        <li><a href="./src/readonly.html">Read Only</a></li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="transbox">
-                    <h2> CSS-LESSONS </h2>
-                </div>
-                <div class="transbox">
-                    <p>
-                    <ul>
-                        <li> <a href="./src/csslessons/page1.html">page1</a></li>
-                        <li> <a href="./src/csslessons/page2.html">page2</a></li>
-                        <li> <a href="./src/csslessons/page3.html">page3</a></li>
-                        <li> <a href="./src/csslessons/page4.html">page4</a></li>
-                        <li> <a href="./src/csslessons/page5.html">page5</a></li>
-                        <li> <a href="./src/csslessons/animation.html">animation</a></li>
-                        <li> <a href="./src/csslessons/background.html">background</a></li>
-                        <li> <a href="./src/csslessons/boxmodel.html">boxmodel</a></li>
-                        <li> <a href="./src/csslessons/demo.html">demo</a></li>
-                        <li> <a href="./src/csslessons/formating.html">formating</a></li>
-                        <li> <a href="./src/csslessons/paragraph.html">paragraph</a></li>
-                        <li> <a href="./src/csslessons/paragraph2.html">paragraph2</a></li>
-
-                    </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="transbox">
-                    <h2> JS-LESSONS </h2>
-                    </div>
-                    <div class="transbox">
-                    <p>
-                    <ul>
-                        <li><a href="./src/pagea.html">pagea</a></li>
-                        <li><a href="./src/pageb.html">pageb</a></li>
-                        <li><a href="./src/pagec.html">pagec</a></li>
-                        <li><a href="./src/paged.html">paged</a></li>
-                        <li><a href="./src/pagee.html">pagee</a></li>
-                        <li><a href="./src/pagef.html">pagef</a></li>
-                        <li><a href="./src/pageg.html">pageg</a></li>
-                        <li><a href="./src/pageh.html">pageh</a></li>
-                        <li><a href="./src/pagei.html">pagei</a></li>
-                        <li><a href="./src/pagej.html">pagej</a></li>
-                        <li><a href="./src/pagek.html">pagek</a></li>
-                        <li><a href="./src/pagel.html">pagel</a></li>
-                        <li><a href="./src/pagem.html">pagem</a></li>
-                        <li><a href="./src/pagen.html">pagen</a></li>
-                        <li><a href="./src/pageo.html">pageo</a></li>
-                        <li><a href="./src/pagep.html">pagep</a></li>
-
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="transbox">
-                    <h2> HTML & CSS CHALLENGES</h2>
-                    </div>
-                    <div class="transbox">
-                    <p>
-                    <ul>
-                        <li><a href="./src/csslessons/three column.html">three column</a></li>
-                        <li><a href="./src/csslessons/qr-code.html">QR code</a></li>
-                        <li><a href="./src/csslessons/order-summary.html">Order summary</a></li>
-                        <li><a href="./src/csslessons/frontend-mentor.html">frontend mentor</a></li>
-                        <li><a href="./src/csslessons/nft.html">NFT</a></li>
-                        <li> <a href="./src/csslessons/mob-landing.html">Mobile-Landing</a></li>
-                        <li><a href="./src/csslessons/profie-card.html">Profile-card</a></li>
-                        <li><a href="./src/csslessons/stats-card.html">stats-card</a></li>
-                        <li><a href="./src/csslessons/price-grid.html">price-grid</a></li>
-                        <li><a href="./src/oppo.html">OPPO</a></li>
-
-
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <div class="transbox">
-                    <h2> JS-CHALLENGES </h2>
-                    </div>
-                     <div class="transbox">
-                    <p>
-                    <ul>
-                        <li> <a href="./src/csslessons/studio-landing.html">Studio-Landing</a></li>
-                        <li><a href="./src/csslessons/advise-generator.html">Advice-Generator</a></li>
-                        <li><a href="./src/csslessons/tip-calc.html">Tip-Calc</a></li></p>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-
-
-
-</body>
-
+        <div style="color: white;">
+       <p>
+        “Every great developer you know got 
+        <p>
+       </p> 
+       there by solving problems they were unqualified
+        </p>
+        <p>
+          to solve until they actually did it.”
+        </p></div>
+        
+    </table>
+    </body>
 </html>
