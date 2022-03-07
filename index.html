@@ -7,137 +7,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <style>
-        :root {
-            --main-font: "Red Hat Display", sans-serif;
-            --background-color: hsl(225, 100%, 94%);
-            --container-box-shadow: -2x 10px 24px -11px rgba(0, 0, 0, 0.62);
-            --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
-            --dark-blue: hsl(223, 47%, 23%);
-            --desaturated-blue: hsl(224, 23%, 55%);
-            --very-pale-blue: hsl(225, 100%, 98%);
-            --bright-blue: hsl(245, 75%, 52%);
-            --light-grey: rgb(136, 133, 133);
-            --white: rgb(255, 255, 255);
-            --red: red;
-        }
-
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
-        html,
-        body {
-            overflow-x: hidden;
+        .column {
+            float: left;
+            width: 20%;
+            padding: 15px;
         }
 
         body {
-            min-height: 140vh;
-            background-color:white;
-
-        }
-
-        .order-title-container {
-            width: 80%;
             height: 100%;
-            max-height: 14rem;
-            font-family: var(--main-font);
-            color: var(--dark-blue);
-            text-align: center;
-            margin: 0 auto;
-            margin-top: 3rem;
+            background-image: url('images/bass.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
-        div {
-            height: 20px;
-            border: 1px solid #1e08ec;
-            align-content: center;
+        div.transbox {
+            /* margin-left: 20%;
+  margin-right: 20%;
+  margin-top:02%; */
+            background-color: rgb(253, 251, 251);
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        div.transbox p {
+            font-weight: bolder;
+            margin: 0;
+            color: #000000;
+        }
+
+        a:visited {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    
-        <table style="margin: auto;">
-            <h1 class="order-title-container">
-                MENU - HTML
-            </h1>
-            <thead>
-                <tr>
-                    <th class="order-title-container" scope="col" width="50">
-                        Pages
-                    </th>
-                </tr>
-            </thead>
-            <div>
-            <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <a href="./src/pagea.html">Pagea</a>
-                        </div>
-                        <div>
-                            <a href="./src/pageb.html">Pageb</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagec.html">Pagec</a>
-                        </div>
-                        <div>
-                            <a href="./src/paged.html">Paged</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagee.html">Pagee</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagef.html">Pagef</a>
-                        </div>
-                        <div>
-                            <a href="./src/pageg.html">Pageg</a>
-                        </div>
-                        <div>
-                            <a href="./src/pageh.html">Pageh</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagei.html">Pagei</a>
-                        </div>
-                        <div>
-                            <a href="./src/tribute.html">Tribute</a>
-                        </div>
-                        <div>
-                            <a href="./src/survey.html">Survey</a>
-                        </div>
-                        <div>
-                            <a href="./src/grand-child-frame.html">Grand Child</a>
-                        </div>
-                        <div>
-                            <a href="./src/login.html">Login</a>
-                        </div>
-                        <div><a href="./src/child-frame.html">Child frame</a></div>
-                        <div><a href="./src/inputtypes.html">Input Types</a></div>
-                        <div><a href="./src/parent.html">Parent</a></div>
-                        <div><a href="./src/target.html">Target</a></div>
-                        <div><a href="./src/radio.html">Radio</a></div>
-                        <div><a href="./src/readonly.html">Read Only</a></div>
-                        <div><a href="./src/oppo.html">OPPO</a></div>
-                        <div><a href="./src/csslessons/three column.html">three column</a></div>
-                        <div><a href="./src/csslessons/qr-code.html">QR code</a></div>
-                        <div><a href="./src/csslessons/order-summary.html">Order summary</a></div>
-                        <div><a href="./src/csslessons/frontend-mentor.html">frontend mentor</a></div>
-                        <div><a href="./src/csslessons/nft.html">NFT</a></div>
-                        <div><a href="./src/csslessons/tip-calc.html">Tip-Calc</a></div>
-                        <div><a href="./src/csslessons/mob-landing.html">Mobile-Landing</a></div>
-                        <div><a href="./src/csslessons/advise-generator.html">Advice-Generator</a></div>
-                        <div><a href="./src/csslessons/profie-card.html">Profile-card</a></div>
-                        <div><a href="./src/csslessons/stats-card.html">stats-card</a></div>
-                        <div><a href="./src/csslessons/price-grid.html">price-grid</a></div>
-                        <div><a href="./src/csslessons/studio-landing.html">Studio-Landing</a></div>
 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <header style="text-align: center;">
+        <div class="transbox">
+            <h1>---MENU---</h1>
+        </div>
+    </header>
+    <section style="background-color:rgb(221, 18, 18);">
+
+
+        <div class="row">
+            <div class="column">
+                <div class="transbox">
+                    <h2>HTML-LESSONS</h2>
+                    <p>
+                    <ul>
+                        <li><a href="./src/pagea.html">Pagea</a></li>
+                        <li> <a href="./src/pageb.html">Pageb</a></li>
+                        <li><a href="./src/pagec.html">Pagec</a></li>
+                        <li><a href="./src/paged.html">Paged</a></li>
+                        <li><a href="./src/pagee.html">Pagee</a></li>
+                        <li><a href="./src/pagef.html">Pagef</a></li>
+                        <li><a href="./src/pageg.html">Pageg</a></li>
+                        <li><a href="./src/pageh.html">Pageh</a></li>
+                        <li><a href="./src/pagei.html">Pagei</a></li>
+                        <li><a href="./src/login.html">login</a></li>
+                        <li><a href="./src/tribute.html">Tribute</a></li>
+                        <li><a href="./src/survey.html">Survey</a></li>
+                        <li><a href="./src/grand-child-frame.html">Grand Child</a></li>
+                        <li> <a href="./src/child-frame.html">Child frame</a></li>
+                        <li><a href="./src/inputtypes.html">Input Types</a></li>
+                        <li><a href="./src/parent.html">Parent</a></li>
+                        <li><a href="./src/target.html">Target</a></li>
+                        <li><a href="./src/radio.html">Radio</a> </li>
+                        <li><a href="./src/readonly.html">Read Only</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="transbox">
+                    <h2> CSS-LESSONS </h2>
+                    <p>
+                    <ul>
+                        <li> <a href="./src/csslessons/page1.html">page1</a></li>
+                        <li> <a href="./src/csslessons/page2.html">page2</a></li>
+                        <li> <a href="./src/csslessons/page3.html">page3</a></li>
+                        <li> <a href="./src/csslessons/page4.html">page4</a></li>
+                        <li> <a href="./src/csslessons/page5.html">page5</a></li>
+                        <li> <a href="./src/csslessons/animation.html">animation</a></li>
+                        <li> <a href="./src/csslessons/background.html">background</a></li>
+                        <li> <a href="./src/csslessons/boxmodel.html">boxmodel</a></li>
+                        <li> <a href="./src/csslessons/demo.html">demo</a></li>
+                        <li> <a href="./src/csslessons/formating.html">formating</a></li>
+                        <li> <a href="./src/csslessons/paragraph.html">paragraph</a></li>
+                        <li> <a href="./src/csslessons/paragraph2.html">paragraph2</a></li>
+
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="transbox">
+                    <h2> JS-LESSONS </h2>
+                    <p>
+                    <ul>
+                        <li><a href="./src/pagea.html">pagea</a></li>
+                        <li><a href="./src/pageb.html">pageb</a></li>
+                        <li><a href="./src/pagec.html">pagec</a></li>
+                        <li><a href="./src/paged.html">paged</a></li>
+                        <li><a href="./src/pagee.html">pagee</a></li>
+                        <li><a href="./src/pagef.html">pagef</a></li>
+                        <li><a href="./src/pageg.html">pageg</a></li>
+                        <li><a href="./src/pageh.html">pageh</a></li>
+                        <li><a href="./src/pagei.html">pagei</a></li>
+                        <li><a href="./src/pagej.html">pagej</a></li>
+                        <li><a href="./src/pagek.html">pagek</a></li>
+                        <li><a href="./src/pagel.html">pagel</a></li>
+                        <li><a href="./src/pagem.html">pagem</a></li>
+                        <li><a href="./src/pagen.html">pagen</a></li>
+                        <li><a href="./src/pageo.html">pageo</a></li>
+                        <li><a href="./src/pagep.html">pagep</a></li>
+
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="transbox">
+                    <h2> HTML & CSS CHALLENGES</h2>
+                    <p>
+                    <ul>
+                        <li><a href="./src/csslessons/three column.html">three column</a></li>
+                        <li><a href="./src/csslessons/qr-code.html">QR code</a></li>
+                        <li><a href="./src/csslessons/order-summary.html">Order summary</a></li>
+                        <li><a href="./src/csslessons/frontend-mentor.html">frontend mentor</a></li>
+                        <li><a href="./src/csslessons/nft.html">NFT</a></li>
+                        <li> <a href="./src/csslessons/mob-landing.html">Mobile-Landing</a></li>
+                        <li><a href="./src/csslessons/profie-card.html">Profile-card</a></li>
+                        <li><a href="./src/csslessons/stats-card.html">stats-card</a></li>
+                        <li><a href="./src/csslessons/price-grid.html">price-grid</a></li>
+                        <li><a href="./src/oppo.html">OPPO</a></li>
+
+
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="transbox">
+                    <h2> JS-CHALLENGES </h2>
+                    <p>
+                    <ul>
+                        <li> <a href="./src/csslessons/studio-landing.html">Studio-Landing</a></li>
+                        <li><a href="./src/csslessons/advise-generator.html">Advice-Generator</a></li>
+                        <li><a href="./src/csslessons/tip-calc.html">Tip-Calc</a></li>
+
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
 </body>
 
 </html>
