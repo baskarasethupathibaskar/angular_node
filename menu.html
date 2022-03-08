@@ -69,6 +69,26 @@
             background-color: transparent;
             text-decoration: underline;
         }
+
+        #myBtn {
+  display:flex; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(248, 246, 246); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  opacity: 0.6;
+}
+
+
+
     </style>
 </head>
 
@@ -204,8 +224,8 @@
                 </div>
             </div>
 
-            <div class="bar bar-footer bar-dark">
-                <button><a href="index.html">Back</button> 
+            <div >
+                <button id="myBtn"><a href="index.html">Back</button> 
               </div>
 
 
