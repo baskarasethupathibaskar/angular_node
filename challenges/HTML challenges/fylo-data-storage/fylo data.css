@@ -18,13 +18,19 @@
     padding: 0;
     font-family: "Raleway", sans-serif;
   }
-  
-  body {
-    font-size: 14px;
+
+  .attribution {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin: 3em;
+    font-size: 1rem;
+    color: var(--neutral-pale-blue);
   }
   
-  .flex {
-    display: flex;
+  .attribution a {
+    color: var(--primary-gradient-1);
+    text-decoration: none;
   }
   
   .align-center {
@@ -35,17 +41,42 @@
     align-items: flex-end;
   }
   
+  body {
+    font-size: 14px;
+  }
+  
+  .container > div:first-child {
+    background-color: var(--neutral-dark-blue);
+    padding: 2em 6em 2em 2em;
+    border-radius: 1em 5em 1em 1em;
+    margin: 2em;
+  }
+  
+  .container > div:first-child > img {
+    margin-bottom: 1em;
+  }
+
+  .container > div:nth-child(2) {
+    background-color: var(--neutral-dark-blue);
+    border-radius: 1em;
+    min-width: 500px;
+    padding: 1.5em 3em;
+    margin: 2em 0;
+    position: relative;
+  }
+  
+  .container > div:nth-child(2) > p {
+    margin-bottom: 1em;
+    color: var(--neutral-grayish-blue);
+  }
+
+  .flex {
+    display: flex;
+  }
+  
+  
   .justify-center {
     justify-content: center;
-  }
-  
-  .space-between {
-    justify-content: space-between;
-  }
-  
-  .storage-value {
-    color: var(--neutral-pale-blue);
-    font-weight: 700;
   }
   
   .left-storage {
@@ -86,16 +117,15 @@
     position: relative;
     z-index: 2;
   }
-  
-  .container > div:first-child {
-    background-color: var(--neutral-dark-blue);
-    padding: 2em 6em 2em 2em;
-    border-radius: 1em 5em 1em 1em;
-    margin: 2em;
-  }
-  
-  .container > div:first-child > img {
-    margin-bottom: 1em;
+
+  .landing-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
   }
   
   .options div {
@@ -109,20 +139,6 @@
     object-fit: contain;
     width: 25px;
     height: 25px;
-  }
-  
-  .container > div:nth-child(2) {
-    background-color: var(--neutral-dark-blue);
-    border-radius: 1em;
-    min-width: 500px;
-    padding: 1.5em 3em;
-    margin: 2em 0;
-    position: relative;
-  }
-  
-  .container > div:nth-child(2) > p {
-    margin-bottom: 1em;
-    color: var(--neutral-grayish-blue);
   }
   
   .progress-bar {
@@ -158,72 +174,14 @@
     transform: translateY(-50%);
   }
   
-  .landing-bg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 50vh;
-    z-index: -1;
+  .space-between {
+    justify-content: space-between;
   }
   
-  .attribution {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    margin: 3em;
-    font-size: 1rem;
+  .storage-value {
     color: var(--neutral-pale-blue);
+    font-weight: 700;
   }
   
-  .attribution a {
-    color: var(--primary-gradient-1);
-    text-decoration: none;
-  }
   
-  @media (max-width: 850px) {
-    .landing {
-      background: url("../fylo-data-storage/images/bg-mobile.png") no-repeat center/cover;
-      flex-direction: column;
-    }
   
-    .left-storage {
-      top: unset;
-      bottom: -3em;
-      right: 50%;
-      transform: translateX(50%);
-      border-bottom-right-radius: 0.6em;
-      white-space: nowrap;
-    }
-  
-    .left-storage::after {
-      display: none;
-    }
-  
-    .landing .container {
-      flex-direction: column;
-      width: 90%;
-    }
-  
-    .container > div:first-child {
-      flex: 1 1 100%;
-      width: 100%;
-      margin: 2em 0;
-    }
-  
-    .container > div:nth-child(2) {
-      flex: 1 1 100%;
-      width: 100%;
-      min-width: unset;
-      margin: 2em 0;
-    }
-  
-    .landing-bg {
-      display: none;
-    }
-  
-    .attribution {
-      position: relative;
-    }
-  }

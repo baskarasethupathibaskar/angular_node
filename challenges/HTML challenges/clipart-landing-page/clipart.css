@@ -13,6 +13,15 @@
     --clr-grayish-blue: hsl(201, 11%, 66%);
 }
 
+.attribution {
+    font-size: 14px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    padding: 20px;
+    background-color: var(--clr-strong-cyan);
+}
+
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -23,57 +32,12 @@ body {
     font-family: var(--ff-primary);
 }
 
-h1 {
-    font-size: 44px;
-    font-weight: var(--fw-semi-bold);
-    color: var(--clr-dark-grayish-blue);
+
+button:hover, button:focus {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: var(--fw-semi-bold);
-    color: var(--clr-dark-grayish-blue);
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: var(--fw-semi-bold);
-    color: var(--clr-dark-grayish-blue);
-}
-
-p {
-    font-size: 18px;
-    color: var(--clr-grayish-blue);
-    font-weight: var(--fw-regular);
-}
-
-main {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-header {
-    background-image: url(../clipart-landing-page/images/bg-header-desktop.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    text-align: center;
-}
-
-header .container {
-    max-width: 690px;
-}
-
-header .logo {
-    margin-bottom: 55px;
-}
-
-header p {
-    line-height: 1.7;
-    margin-top: 18px;
-    margin-bottom: 40px;
-}
 
 button {
     border: none;
@@ -87,65 +51,25 @@ button {
     margin: 8px;
 }
 
-button:hover, button:focus {
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.ios {
-    background-color: var(--clr-strong-cyan);
-    box-shadow: 0 5px 2px -2px #4D9D8A;
-}
-
-.mac {
-    background-color: var(--clr-light-blue);
-    box-shadow: 0 5px 2px -2px #5B63B8;
-}
-
-.intro {
-    margin-top: 14px;;
-}
-
-.intro .subtitle {
-    max-width: 695px;
-    text-align: center;
-}
-
-.intro .subtitle p{
-    margin-top: 20px;
+.customers {
+    max-width: 1110px;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 170px;
     margin-bottom: 80px;
-    line-height: 1.7;
 }
 
-.intro .features {
-    display: flex;
+.customers .customer {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.intro .left{
-    width: 50%;
-    background-image: url(../clipart-landing-page/images/image-computer.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+.customers .customer img {
+    width: 100%;
+    height: auto;
 }
 
-.intro .right {
-    width: 50%;
-    padding-top: 68px;
-    padding-bottom: 40px;
-}
 
-.intro .right p {
-    font-size: 16px;
-    margin-top: 8px;
-    line-height: 1.9
-}
-
-.intro .right .feature {
-    max-width: 340px;
-    margin-bottom: 56px;
-    margin-left: 110px;
-}
 
 .devices {
     margin-top: 152px;
@@ -169,71 +93,6 @@ button:hover, button:focus {
     height: auto;
 }
 
-.workflow {
-    margin-top: 70px;
-    margin-bottom: 88px
-}
-
-.workflow .subtitle {
-    text-align: center;
-}
-
-.workflow .subtitle h2 {
-    margin-bottom: 24px
-}
-
-.workflow .extra-features {
-    display: flex;
-    max-width: 1110px;
-    margin-top: 58px;
-    justify-content: space-between;
-}
-
-.workflow .extra-features .feature {
-    text-align: center;
-    padding: 20px;
-}
-
-.workflow .extra-features .feature h3 {
-    margin-top: 40px;
-    margin-bottom: 18px;
-}
-
-.workflow .extra-features .feature p {
-    font-size: 15px;
-    line-height: 2;
-}
-
-.customers {
-    max-width: 1110px;
-    display:flex;
-    justify-content: space-between;
-    margin-top: 170px;
-    margin-bottom: 80px;
-}
-
-.customers .customer {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.customers .customer img {
-    width: 100%;
-    height: auto;
-}
-
-.links {
-    max-width: 682px;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 75px;
-}
-
-.links p {
-    line-height: 1.7;
-    margin-top: 22px;
-    margin-bottom: 38px;
-}
 
 footer {
     max-width: 1440px;
@@ -316,267 +175,168 @@ footer .top .socials .social {
     margin-left: 24px;
 }
 
-.attribution {
-    font-size: 14px; 
+
+
+
+h1 {
+    font-size: 44px;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-dark-grayish-blue);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-dark-grayish-blue);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-dark-grayish-blue);
+}
+
+
+header {
+    background-image: url(../clipart-landing-page/images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+    padding-bottom: 130px;
     text-align: center;
-    color: hsl(228, 45%, 44%);
-    padding: 20px;
+}
+
+header .container {
+    max-width: 690px;
+}
+
+header .logo {
+    margin-bottom: 55px;
+}
+
+header p {
+    line-height: 1.7;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+
+.ios {
     background-color: var(--clr-strong-cyan);
+    box-shadow: 0 5px 2px -2px #4D9D8A;
 }
 
-@media (max-width: 1120px) {
-    .customers, footer .top {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
+
+.intro {
+    margin-top: 14px;;
 }
 
-@media (max-width: 768px) {
-    .wrapper {
-        overflow: hidden;
-    }
-
-    .intro .subtitle p{
-        margin-bottom: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .intro .features {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .intro .features .left {
-        height: 400px;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .intro .right {
-        width: 100%;
-    }
-    
-    .intro .right .feature {
-        max-width: 400px;
-        margin-left: auto;
-        text-align: center;
-    }
-
-    .devices {
-        margin-top: 50px;
-    }
-
-    .devices .subtitle p, .links .subtitle p {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    footer .top {
-        overflow: hidden;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer .top .top-left {
-        margin: 0;
-    }
-
-    footer .top .site-map {
-        margin-left: 40px;
-    }
-
-    footer .top .top-right {
-        margin: 0;
-        padding-top: 20px;;
-    }
+.intro .subtitle {
+    max-width: 695px;
+    text-align: center;
 }
 
-@media (max-width: 500px) {
-    body {
-        padding: 0 30px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-    
-    p {
-        font-size: 16px;
-    }
-
-    header {
-        padding-top: 122px;
-        background-image: url(../clipart-landing-page/images/bg-header-mobile.png);
-    }
-
-    header .logo {
-        margin-bottom: 60px;
-    }
-
-    header p {
-        margin-top: 16px;
-        margin-bottom: 35px;
-        line-height: 1.6;
-    }
-
-    button {
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .intro .subtitle p{
-        line-height: 1.6;
-        margin-bottom: 70px;
-    }
-
-    .intro .features {
-        flex-direction: column;
-    }
-
-    .intro .left{
-        width: 100%;
-        height: 240px;
-        background-position: center center;
-    }
-
-    .intro .right {
-        width: 100%;
-        padding-top: 55px;
-    }
-
-    .intro .right p {
-        line-height: 1.7;
-        margin-top: 10px;
-    }
-
-    .intro .right .feature {
-        margin-bottom: 46px;
-        margin-left: auto;
-        text-align: center;
-    }
-
-    .devices {
-        margin-top: 98px;
-    }
-
-    .devices .subtitle {
-        margin-bottom: 58px;
-    }
-
-    .devices .subtitle p {
-        margin-top: 15px;
-    }
-
-    .workflow {
-        margin-top: 115px;
-        margin-bottom: 66px;
-    }
-
-    .workflow .subtitle h2 {
-        margin-bottom: 14px
-    }
-
-    .workflow .subtitle p {
-        line-height: 1.5;
-    }
-
-    .workflow .extra-features {
-        flex-direction: column;
-        margin-top: 62px;
-    }
-
-    .workflow .extra-features .feature {
-        padding: 28px 0;
-    }
-
-    .workflow .extra-features .feature h3 {
-        margin-top: 35px;
-        margin-bottom: 18px;
-    }
-
-    .workflow .extra-features .feature p {
-        line-height: 1.8;
-    }
-
-    .customers {
-        flex-direction: column;
-        margin-top: 0;
-    }
-
-    .customers .customer {
-        padding: 34px 0;
-    }
-
-    .customers .customer img {
-        width: 85%;
-        height: auto;
-    }
-
-    .links {
-        margin-top: 130px;
-    }
-
-    .links p {
-        margin-top: 15px;
-        margin-bottom: 28px;
-    }
-
-    footer {
-        margin-top: 155px;
-    }
-
-    footer .top {
-        flex-direction: column;
-        padding: 50px 0;
-        width: 100%;
-    }
-
-    footer .top .top-left {
-        flex-direction: column;
-        margin-right: 0;
-    }
-
-    footer .top .site-map {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 50px auto;
-    }
-
-    footer .top .site-map .left,
-    footer .top .site-map .middle {
-        margin: 0;
-    }
-
-    footer .top .site-map .left a, 
-    footer .top .site-map .middle a {
-        margin: auto;
-    }
-
-    footer .top .site-map .right {
-        margin: 0;
-    }
-
-    footer .top .top-right {
-        margin: 0;
-    }
-
-    footer .top .socials {
-        margin: 0 auto;
-        justify-content: center;
-    }
-
-    footer .top .socials .social {
-        margin: 0 20px;
-    }
-
-    .attribution {
-        font-size: 12px; 
-    }  
+.intro .subtitle p{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    line-height: 1.7;
 }
+
+.intro .features {
+    display: flex;
+}
+
+.intro .left{
+    width: 50%;
+    background-image: url(../clipart-landing-page/images/image-computer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.intro .right {
+    width: 50%;
+    padding-top: 68px;
+    padding-bottom: 40px;
+}
+
+.intro .right p {
+    font-size: 16px;
+    margin-top: 8px;
+    line-height: 1.9
+}
+
+.intro .right .feature {
+    max-width: 340px;
+    margin-bottom: 56px;
+    margin-left: 110px;
+}
+
+
+.links {
+    max-width: 682px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+.links p {
+    line-height: 1.7;
+    margin-top: 22px;
+    margin-bottom: 38px;
+}
+
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.mac {
+    background-color: var(--clr-light-blue);
+    box-shadow: 0 5px 2px -2px #5B63B8;
+}
+
+p {
+    font-size: 18px;
+    color: var(--clr-grayish-blue);
+    font-weight: var(--fw-regular);
+}
+
+
+.workflow {
+    margin-top: 70px;
+    margin-bottom: 88px
+}
+
+.workflow .subtitle {
+    text-align: center;
+}
+
+.workflow .subtitle h2 {
+    margin-bottom: 24px
+}
+
+.workflow .extra-features {
+    display: flex;
+    max-width: 1110px;
+    margin-top: 58px;
+    justify-content: space-between;
+}
+
+.workflow .extra-features .feature {
+    text-align: center;
+    padding: 20px;
+}
+
+.workflow .extra-features .feature h3 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.workflow .extra-features .feature p {
+    font-size: 15px;
+    line-height: 2;
+}
+

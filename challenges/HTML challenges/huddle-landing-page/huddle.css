@@ -10,14 +10,22 @@
     box-sizing: border-box;
 }
 
+
+
+#attribution {
+    margin-top: 30px;
+     font-size: 15px; 
+     text-align: center;
+     justify-content: center;
+     }
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 body{
     background: url('../huddle-landing-page/images/bg-desktop.svg'), var(--violet);
 }
-.mockups{ 
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10PX;
-}
+
 h2{
     font-family: 'Poppins';
     font-size: 45px;
@@ -26,6 +34,12 @@ h2{
     color: #fff;
     max-width: 600px;
 }
+.mockups{ 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10PX;
+}
+
 p{
     font-family: 'Poppins';
     font-size: 17px;
@@ -46,15 +60,4 @@ p{
     border-radius: 40px;
     box-shadow: 2px 2px 8px black;
     cursor: pointer;
-}
-
-
-#attribution {
-    margin-top: 30px;
-     font-size: 15px; 
-     text-align: center;
-     justify-content: center;
-     }
-#attribution a { 
-    color: hsl(228, 45%, 44%); 
 }
