@@ -1,0 +1,268 @@
+:root {
+  --ff-primary: "Bai Jamjuree", sans-serif;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --clr-strong-cyan: hsl(171, 66%, 44%);
+  --clr-light-blue: hsl(233, 100%, 69%);
+  --clr-dark-grayish-blue: hsl(210, 10%, 33%);
+  --clr-grayish-blue: hsl(201, 11%, 66%);
+}
+.attribution {
+  background-color: var(--clr-strong-cyan);
+  color: hsl(228, 45%, 44%);
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  font-family: var(--ff-primary);
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+button {
+  border: none;
+  border-radius: 35px;
+  color: white;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: 1px;
+  margin: 8px;
+  padding: 15px 33px;
+}
+.customers {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin-top: 170px;
+  margin-bottom: 80px;
+}
+.customers .customer {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.customers .customer img {
+  height: auto;
+  width: 100%;
+}
+.devices {
+  margin-top: 152px;
+}
+.devices .subtitle {
+  max-width: 675px;
+  margin-bottom: 98px;
+  text-align: center;
+}
+.devices .subtitle p {
+  line-height: 1.7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.devices img {
+  display: flex;
+  height: auto;
+  max-width: 100%;
+}
+footer {
+  border: 1px soolid black;
+  background-color: #f5f6f8;
+  margin-top: 145px;
+  max-width: 1440px;
+}
+footer .top {
+  display: flex;
+  max-width: 1110px;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+footer .top .top-left {
+  display: flex;
+  margin-left: 0;
+}
+footer .top .top-right {
+  margin-right: 0;
+}
+footer .top .logo img {
+  height: auto;
+  width: 55px;
+}
+footer .top .site-map {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 135px;
+}
+footer .top .site-map a {
+  color: var(--clr-dark-grayish-blue);
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+footer .top .site-map a:hover,
+footer .top .site-map a:focus {
+  cursor: pointer;
+  color: var(--clr-strong-cyan);
+}
+footer .top .site-map .left,
+footer .top .site-map .middle {
+  display: flex;
+  flex-direction: column;
+}
+footer .top .site-map .left {
+  margin-right: 98px;
+}
+footer .top .site-map .middle {
+  margin-right: 73px;
+}
+footer .top .site-map .left a,
+footer .top .site-map .middle a {
+  margin-left: 0;
+}
+footer .top .socials {
+  display: flex;
+  margin-right: 0;
+  margin-left: 24px;
+}
+footer .top .socials svg:hover path {
+  cursor: pointer;
+  fill: var(--clr-strong-cyan);
+}
+footer .top .socials .social {
+  margin-left: 24px;
+}
+h1 {
+  color: var(--clr-dark-grayish-blue);
+  font-size: 44px;
+  font-weight: var(--fw-semi-bold);
+}
+h2 {
+  color: var(--clr-dark-grayish-blue);
+  font-size: 36px;
+  font-weight: var(--fw-semi-bold);
+}
+h3 {
+  color: var(--clr-dark-grayish-blue);
+  font-size: 24px;
+  font-weight: var(--fw-semi-bold);
+}
+header {
+  background-image: url(../clipart-landing-page/images/bg-header-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  text-align: center;
+}
+header .container {
+  max-width: 690px;
+}
+header .logo {
+  margin-bottom: 55px;
+}
+header p {
+  line-height: 1.7;
+  margin-top: 18px;
+  margin-bottom: 40px;
+}
+.ios {
+  background-color: var(--clr-strong-cyan);
+  box-shadow: 0 5px 2px -2px #4d9d8a;
+}
+.intro {
+  margin-top: 14px;
+}
+.intro .subtitle {
+  max-width: 695px;
+  text-align: center;
+}
+.intro .subtitle p {
+  line-height: 1.7;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.intro .features {
+  display: flex;
+}
+.intro .left {
+  background-image: url(../clipart-landing-page/images/image-computer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50%;
+}
+.intro .right {
+  padding-top: 68px;
+  padding-bottom: 40px;
+  width: 50%;
+
+}
+.intro .right p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-top: 8px;
+}
+.intro .right .feature {
+  max-width: 340px;
+  margin-bottom: 56px;
+  margin-left: 110px;
+}
+.links {
+  max-width: 682px;
+  margin-top: 150px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.links p {
+  margin-top: 22px;
+  margin-bottom: 38px;
+  line-height: 1.7;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.mac {
+  background-color: var(--clr-light-blue);
+  box-shadow: 0 5px 2px -2px #5b63b8;
+}
+p {
+  color: var(--clr-grayish-blue);
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+}
+.workflow {
+  margin-top: 70px;
+  margin-bottom: 88px;
+}
+.workflow .subtitle {
+  text-align: center;
+}
+.workflow .subtitle h2 {
+  margin-bottom: 24px;
+}
+.workflow .extra-features {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin-top: 58px;
+}
+.workflow .extra-features .feature {
+  padding: 20px;
+  text-align: center;
+}
+.workflow .extra-features .feature h3 {
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+.workflow .extra-features .feature p {
+  font-size: 15px;
+  line-height: 2;
+}

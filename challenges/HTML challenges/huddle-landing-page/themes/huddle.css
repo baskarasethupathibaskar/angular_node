@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Outfit:wght@400;700&family=Poppins:wght@400;600&display=swap");
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#attribution {
+  font-size: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+#attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background: url("../huddle-landing-page/images/bg-desktop.svg"), var(--violet);
+}
+h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 45px;
+  margin-top: 60px;
+  margin-left: 30px;
+  max-width: 600px;
+}
+.mockups {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+p {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 17px;
+  margin-left: -5px;
+  max-width: 600px;
+  padding: 20px 30px;
+}
+.reg {
+  border-radius: 40px;
+  box-shadow: 2px 2px 8px black;
+  border: none;
+  color: var(--violet);
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 15px;
+  margin-left: 35px;
+  margin-top: 10px;
+  outline: none;
+  padding: 12px 50px;
+}

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --card-BG: hsl(216, 50%, 16%);
+  --cyan: hsl(178, 100%, 50%);
+  --line: hsl(215, 32%, 27%);
+  --main-BG: hsl(217, 54%, 11%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--main-BG);
+  font-family: "Outfit", sans-serif;
+}
+#line {
+  border: 1px solid var(--line);
+}
+#main-card {
+  border-radius: 15px;
+  background-color: var(--card-BG);
+  height: auto;
+  left: 50%;
+  padding: 20px 25px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+#main-card #card-image > img {
+  border-radius: 15px;
+  width: 100%;
+}
+#main-card #card-content {
+  line-height: 1.7;
+  padding: 15px 0;
+}
+x #main-card #card-content #card-title {
+  color: var(--white);
+}
+#main-card #card-content #card-title,
+#main-card #card-content #card-text {
+  margin-bottom: 8px;
+}
+#main-card #card-content #card-text {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+#main-card #ethereum-info {
+  display: flex;
+  justify-content: space-between;
+}
+#main-card #ethereum-info > div {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+#main-card #ethereum-info > div > img {
+  height: 20px;
+}
+#main-card #ethereum-info > div > p {
+  color: var(--cyan);
+}
+#main-card #ethereum-info > div:first-of-type p {
+  font-weight: 600;
+}
+#main-card #ethereum-info > div:last-of-type p {
+  font-weight: 300;
+}
+#main-card #card-person {
+  align-items: center;
+  display: flex;
+  padding-top: 13px;
+}
+#main-card #card-person #person-image > img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 35px;
+}
+#main-card #card-person #person-info > p {
+  color: var(--soft-blue);
+  margin-left: 15px;
+}
+#main-card #card-person #person-info > p > span {
+  color: var(--white);
+  font-weight: 300;
+}
+p {
+  font-size: 16px;
+}

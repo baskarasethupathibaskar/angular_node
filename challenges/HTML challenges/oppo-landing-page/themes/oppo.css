@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+.active {
+  background-color: #717171;
+}
+body,
+html {
+  background-color: powderblue;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.container {
+  position: relative;
+}
+.container1 {
+  position: relative;
+}
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  width: 15px;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+}
+.h1 {
+  text-align: center;
+}
+.item {
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: block;
+  float: left;
+  margin-right: 22px;
+  margin-bottom: 1px;
+  text-align: center;
+  width: 200px;
+}
+img {
+  vertical-align: middle;
+}
+.mySlides {
+  display: none;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section {
+  align-items: center;
+  background: powderblue;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.span {
+  vertical-align: middle;
+}
+.text {
+  color: #16172e;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+.text-block {
+  bottom: 20px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  right: 10px;
+}
+.text-block1 {
+  background-color: black;
+  bottom: 20px;
+  color: white;
+  left: 10px;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text {
+  bottom: 8px;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
