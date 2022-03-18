@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(to bottom, #1e1f29, #251f2e);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  letter-spacing: 5px;
+  -ms-flex-direction: column;
+  -ms-flex-align: center;
+  text-transform: uppercase;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  width: 100vw;
+}
+.app {
+  width: 100vw;
+  margin: 9rem 0 0 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.app h3 {
+  font-size: 1.2rem;
+  margin: 0 auto 3rem auto;
+  width: 90vw;
+}
+.app .countdown-container {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  max-width: 690px;
+  margin: 0 auto;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  width: 90vw;
+}
+.app .countdown-container .countdown-item {
+  position: relative;
+}
+.app .countdown-container .countdown-item .upper-box {
+  background-color: #2c2c44;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  height: 35px;
+  width: 70px;
+}
+.app .countdown-container .countdown-item span:first-of-type {
+  color: #fb6087;
+  font-size: 2.4rem;
+  font-variant-numeric: tabular-nums;
+  left: 50%;
+  letter-spacing: 0;
+  position: absolute;
+  top: 36%;
+  transform: translate(-50%, -50%);
+}
+.app .countdown-container .countdown-item .lower-box {
+  background-color: #343650;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0 #191a24;
+  height: 33px;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: 0 5px 0 0 #191a24;
+  width: 70px;
+}
+.app .countdown-container .countdown-item span:last-of-type {
+  color: #8486a9;
+  font-size: 0.43rem;
+  letter-spacing: 3px;
+}
+.background-hills {
+  background: url(../images/pattern-hills.svg);
+  background-position: -40rem;
+  background-repeat: no-repeat;
+  background-size: 300vw 180px;
+  height: 180px;
+  position: absolute;
+  width: 100vw;
+}
+.background-stars {
+  background: url(../images/bg-stars.svg);
+  background-size: cover;
+  height: calc(100vh - 200px);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+footer {
+  bottom: 3rem;
+  position: absolute;
+  z-index: 1000;
+}
+footer ul {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: center;
+  list-style: none;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+footer ul li a {
+  font-size: 1.7rem;
+  color: #8486a9;
+  padding: 0 0.8rem;
+}
+footer ul li a:hover {
+  color: #fb6087;
+}
+@media (min-width: 768px) {
+  .app h3 {
+    font-size: 2rem;
+    margin: 0 auto 7rem auto;
+  }
+  .app .countdown-container .countdown-item {
+    position: relative;
+  }
+  .app .countdown-container .countdown-item .upper-box {
+    width: 140px;
+    height: 70px;
+  }
+  .app .countdown-container .countdown-item span:first-of-type {
+    font-size: 4.5rem;
+    top: 38%;
+    left: 50%;
+  }
+  .app .countdown-container .countdown-item .lower-box {
+    width: 140px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    -webkit-box-shadow: 0 10px 0 0 #191a24;
+    box-shadow: 0 10px 0 0 #191a24;
+  }
+  .app .countdown-container .countdown-item span:last-of-type {
+    font-size: 0.8rem;
+  }
+  .background-hills {
+    background-size: cover;
+    background-position: center;
+  }
+  footer {
+    bottom: 4rem;
+  }
+}
+@media (min-width: 1440px) {
+  .background-stars {
+    height: calc(100vh - 220px);
+  }
+  .background-hills {
+    height: 200px;
+  }
+}
+@media (min-width: 1920px) {
+  .background-stars {
+    height: calc(100vh - 260px);
+  }
+  .background-hills {
+    height: 260px;
+  }
+}

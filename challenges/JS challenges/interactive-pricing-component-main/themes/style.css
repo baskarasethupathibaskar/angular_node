@@ -1,0 +1,214 @@
+:root {
+  --DarkDesaturatedBlue: hsl(227, 35%, 25%);
+  --LightGrayishEmpty: hsl(224, 65%, 95%);
+  --LightGrayishBlue: hsl(223, 50%, 87%);
+  --LightGrayishRed: hsl(14, 92%, 95%);
+  --LightRed: hsl(15, 100%, 70%);
+  --GrayishBlue: hsl(225, 20%, 60%);
+  --PaleBlue: hsl(226, 100%, 87%);
+  --SoftCyan: hsl(174, 77%, 80%);
+  --StrongCyan: hsl(174, 86%, 45%);
+  --VeryPale: hsl(230, 100%, 99%);
+  --White: hsl (0, 0%, 100%);
+}
+.body {
+  background: var(--VeryPale);
+  background-image: url("images/bg-pattern.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
+}
+.container {
+  padding: 0 25px;
+}
+.u-h2 {
+  font-weight: 600;
+  color: var(--DarkDesaturatedBlue);
+  margin: 50px 0 20px;
+}
+.u-p {
+  color: var(--GrayishBlue);
+}
+.header {
+  background-image: url("images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  color: var(--GrayishBlue);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.card .card-p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card .slider {
+  background: var(--SoftCyan);
+  border-radius: 5px;
+  height: 10px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  -webkit-transition: 0.2s;
+  -webkit-appearance: none;
+  width: 100%;
+}
+.card .slider::-webkit-slider-thumb {
+  appearance: none;
+  background: url("images/icon-check.svg");
+  background-color: var(--StrongCyan);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 7px 10px 7px var(--SoftCyan);
+  cursor: pointer;
+  height: 30px;
+  -webkit-appearance: none;
+  width: 30px;
+}
+
+.card .slider::-moz-range-thumb {
+  background: url("images/icon-slider.svg");
+  background-color: var(--StrongCyan);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px var(--SoftCyan);
+  height: 30px;
+  width: 30px;
+}
+.card .card-price {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.card .card-price .card-value {
+  color: var(--DarkDesaturatedBlue);
+  font-size: 2em;
+  font-weight: 800;
+}
+.card .card-timeselector {
+  align-items: center;
+  display: flex;
+  font-size: 0.7em;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card .card-timeselector .checkbox {
+  display: none;
+}
+.card .card-timeselector .checkbox:checked ~ .price-toggle::before {
+  transform: translateX(0);
+}
+.card .card-timeselector .checkbox:checked ~ .price-toggle {
+  background: var(--LightGrayishBlue);
+}
+.card .card-timeselector .price-toggle {
+  background: var(--StrongCyan);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  height: 20px;
+  padding: 5px;
+  user-select: none;
+  width: 40px;
+}
+.card .card-timeselector .price-toggle:hover {
+  background: var(--SoftCyan);
+}
+.card .card-timeselector .price-toggle::before {
+  background-color: var(--VeryPale);
+  border-radius: 50%;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  margin-top: -3px;
+  transform: translateX(15px);
+  transition: 0.3s;
+  user-select: none;
+  width: 15px;
+  will-change: transform;
+}
+.card .card-timeselector .percentage {
+  background: var(--LightGrayishRed);
+  border-radius: 20px;
+  color: var(--LightRed);
+  margin-left: 5px;
+  padding: 3px 7px;
+}
+.card .card-timeselector .discount {
+  transition: 0.3s;
+  visibility: hidden;
+}
+.card .card-line {
+  background-color: var(--LightGrayishEmpty);
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+.card .card-characteristics ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.card .card-characteristics li {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.card .card-characteristics li .check {
+  margin-right: 10px;
+}
+.card .card-button {
+  background: var(--DarkDesaturatedBlue);
+  border-radius: 20px;
+  border-style: none;
+  color: var(--PaleBlue);
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 25px;
+  outline: none;
+  padding: 10px 25px;
+}
+.card .card-button:hover {
+  color: var(--LightGrayishEmpty);
+}
+
+.footer .attribution {
+  color: var(--VeryDarkGrayishCyan);
+  font-size: 0.9em;
+  text-align: center;
+}
+.footer .attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+@media screen and (min-width: 720px) {
+  .body {
+    font-size: 17px;
+  }
+  .card {
+    margin: auto;
+    width: 50%;
+  }
+  .card .card-timeselector .discount {
+    visibility: visible;
+  }
+}

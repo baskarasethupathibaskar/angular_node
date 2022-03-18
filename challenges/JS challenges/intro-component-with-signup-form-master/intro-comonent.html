@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./themes/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text">
+      <h2>Learn to code <br> by watching others</h2>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="formarea">
+      <button class="btn" id="btn"> <span>Try it free 7 days</span> then $20/mo. thereafter</button>
+      <form action="">
+        <div class="inpt">
+          <input class="" placeholder="First Name" type="text" name="firstname" id="firtname">
+          <img id="error-img" src="images/icon-error.svg" alt="">
+          <span id="error-msg"></span>
+        </div>
+        <div class="inpt">
+          <input placeholder="Last Name" type="text" name="lastname" id="lastname">
+          <img id="error-img" src="images/icon-error.svg" alt="">
+          <span id="error-msg"></span>
+        </div>
+        <div class="inpt">
+          <input placeholder="Email" type="text" name="email" id="email">
+          <img id="error-img" src="images/icon-error.svg" alt="">
+          <span id="error-msg"></span>
+        </div>
+        <div class="inpt">
+          <input placeholder="Password" type="password" name="password" id="password">
+          <img id="error-img" src="images/icon-error.svg" alt="">
+          <span id="error-msg"></span>
+        </div>
+        <input type="submit" id="submot" value="Claim your free trial">
+        <p>By clicking the button, you are agreeing to our <span> Terms and Services</span></p>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

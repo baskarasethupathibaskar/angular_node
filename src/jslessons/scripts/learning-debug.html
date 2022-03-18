@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug</title>
+</head>
+<body>
+    <script>
+        const people = [
+            {
+                name: "jhon", cool: true, country: "canada"
+            },
+            {
+                name: "scot", cool: true, country: "USA"
+            },
+            {
+                name: "jimmy", cool: false, country: "America"
+            }
+        ];
+        //enumeration
+        people.forEach((person, index) => {
+            console.table(index,person.name,person.cool,person.country)
+        })
+
+        //console.count -- counts how many times , say, a function is run
+        function certify ( name ) {
+            console.count(`Certifyin Doctor degree for $(name)`)
+            return `Dr.${name}`
+        }
+    </script>
+</body>
+</html>
