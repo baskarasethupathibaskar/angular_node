@@ -3,7 +3,7 @@ a {
   text-decoration: none;
 }
 body {
-  background-image: url(./images/laptop.jpg);
+  background-image: url(../images/laptop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
