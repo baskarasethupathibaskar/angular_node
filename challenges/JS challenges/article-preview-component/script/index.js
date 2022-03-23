@@ -1,12 +1,10 @@
-const btn = document.querySelector(".card__footer--button");
-const tooltip = document.querySelector(".tooltip");
-const tooltipBtn = document.querySelector(".tooltip__button");
+const popup = document.querySelector(".pop-up");
+const btnOpenPop = document.querySelector(".share-btn");
+const btnClosePop = document.querySelector(".close-popup");
 
-btn.addEventListener("click", (e) => {
-  tooltip.classList.toggle("active");
-});
+const openPopUp = function () {
+  popup.classList.toggle("hidden");
+  console.log("this worked");
+};
 
-tooltipBtn.addEventListener("click", (e) => {
-  tooltip.classList.remove("active");
-});
-
+btnOpenPop.addEventListener("click", openPopUp);
