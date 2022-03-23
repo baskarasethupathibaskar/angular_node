@@ -31,7 +31,7 @@ footer {
   transform: translateX(-50%);
 }
 .hero-image {
-  background: url(../base-apparel-coming-soon/images/hero-desktop.jpg);
+  background: url(../images/hero-desktop.jpg);
   background-repeat: no-repeat;
   background-position: right;
   height: 100vh;

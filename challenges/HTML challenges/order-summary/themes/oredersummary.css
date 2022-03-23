@@ -23,7 +23,7 @@ body {
 }
 body {
   background-color: var(--background-color);
-  background-image: url("../order-summary/images/pattern-background-desktop.svg");
+  background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 140vh;
@@ -71,7 +71,7 @@ body {
   color: var(--red);
 }
 .music-img {
-  background-image: url("../order-summary/images/icon-music.svg");
+  background-image: url("../images/icon-music.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -98,7 +98,7 @@ body {
   width: 90%;
 }
 .order-header-image {
-  background-image: url("../order-summary/images/illustration-hero.svg");
+  background-image: url("../images/illustration-hero.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

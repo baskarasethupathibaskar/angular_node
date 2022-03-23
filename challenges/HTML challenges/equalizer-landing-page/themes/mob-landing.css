@@ -35,7 +35,7 @@
   color: hsl(228, 45%, 44%);
 }
 body {
-  background-image: url("../equalizer-landing-page/images/bg-main-mobile.png");
+  background-image: url("../images/bg-main-mobile.png");
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: top -250px left 80px;
