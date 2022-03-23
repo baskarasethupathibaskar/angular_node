@@ -9,3 +9,4 @@ btn.addEventListener("click", (e) => {
 tooltipBtn.addEventListener("click", (e) => {
   tooltip.classList.remove("active");
 });
+

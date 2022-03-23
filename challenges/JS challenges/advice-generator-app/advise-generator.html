@@ -2,26 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../advice-generator-app/images/favicon-32x32.png" />
-  <link rel="stylesheet" href="./themes/advise-generator.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Advice generator app</title>
+  <link rel="stylesheet" href="./themes/advise-generator.css">
 </head>
 
 <body>
-  <main class="container">
-    <h1 id="title">''</h1>
-    <p id="text">''</p>
+  
+  <section>
+    <p>Advice # <span id="id"></span></p>
+    <h1 id="advice"> </h1>
+    <img src="./images/pattern-divider-desktop.svg" id="desktop" alt="divider" class="divider">
+    <img src="./images/pattern-divider-mobile.svg" id="mobile" alt="divider" class="divider">
+    <button><img src="./images/icon-dice.svg" alt="dice" id="dice"> </button>
+  </section>
 
-    <img class="divider-line" src="../advice-generator-app/images/pattern-divider-mobile.svg" alt="divider" />
 
-    <div class="container__lower">
-      <button onclick="retrieveAdvice()" aria-label="click here to generate a quote">
-        <img src="../advice-generator-app/images/icon-dice.svg" alt="" />
-      </button>
-    </div>
-  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Baskar</a>.
+  </div>
   <script src="./script/advise-script.js"></script>
 </body>
 
