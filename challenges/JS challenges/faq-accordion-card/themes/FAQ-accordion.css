@@ -1,88 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-:root {
-  --Dark-grayish-blue-txt: hsl(240, 6%, 50%);
-  --Light-grayish-blue-divider: hsl(240, 5%, 91%);
-  --Soft-red: hsl(14, 88%, 65%);
-  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
-  --Very-dark-grayish-blue-txt: hsl(237, 12%, 33%);
-}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 12px;
-}
-.body {
   align-items: center;
-  background-image: linear-gradient(
-    175deg,
-    hsl(273, 75%, 66%),
-    hsl(240, 73%, 65%)
+  background: linear-gradient(
+    0deg,
+    rgba(101, 101, 231, 1) 0%,
+    rgba(175, 103, 233, 1) 100%
   );
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
   justify-content: center;
-  width: 100vw;
+  min-height: 100vh;
 }
-.container {
-  background-color: white;
-  border-radius: 16px;
-  box-shadow: 0px 5px 20px rgb(0, 0, 48);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 78vh;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 3rem;
-  width: 63vw;
+
+h2 {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
-.card-1 img {
-  margin-left: -3.5rem;
+.faq-box {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 460px;
+  padding: 10px 20px;
+  width: 300px;
+}
+.attribution {
+  bottom: 0;
+  font-size: 11px;
+  position: absolute;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.img-area {
+  padding-top: 100px;
+  position: relative;
+}
+.img-area-desktop {
+  display: none;
+  position: relative;
+}
+img {
+  position: absolute;
+}
+.main-img {
+  top: -126px;
+}
+.img-shadow {
+  left: 10px;
+  top: -10px;
+  transform: scale(1.05);
+}
+.box-img {
+  display: none;
+  z-index: 2;
+}
+.question-box {
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  max-height: 40px;
   overflow: hidden;
-  padding-right: 30px;
-  padding-top: 80px;
+  width: 100%;
 }
-.card-1 {
-  background-image: url(../images/bg-pattern-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-  width: 400px;
-}
-.card-2 h1 {
-  color: var(--Very-dark-desaturated-blue);
-  font-weight: 600;
-  padding-bottom: 30px;
-  padding-top: 50px;
-}
-.qas {
-  border-bottom: 1px solid var(--Light-grayish-blue-divider);
-  box-sizing: border-box;
-  height: 12%;
-  margin-right: 5rem;
-  width: 90%;
-}
-.question-1,
-.question-2,
-.question-3,
-.question-4,
-.question-5 {
-  align-items: center;
-  color: var(--Very-dark-grayish-blue-txt);
+.question-btn {
+  cursor: pointer;
   display: flex;
-  font-weight: 10px;
   justify-content: space-between;
-  padding-bottom: 5px;
-  padding-right: 30px;
-  padding-top: 5px;
+  overflow: hidden;
+  padding: 12px 0;
 }
 .answer {
-  color: var(--Very-dark-desaturated-blue);
-  display: none;
-  font-weight: 12px;
-  padding-bottom: 10px;
-  padding-right: 15px;
+  color: #555;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.active {
+  height: auto;
+  max-height: 150px;
+}
+.arrow {
+  color: rgb(182, 119, 3);
+  pointer-events: none;
+}
+@media (min-width: 1200px) {
+  .faq-box {
+    display: flex;
+    height: 500px;
+    position: relative;
+    width: 1000px;
+  }
+  .img-area {
+    display: none;
+  }
+  .img-area-desktop {
+    display: block;
+    left: -21px;
+    overflow: hidden;
+    width: 50%;
+  }
+  .img-area-desktop .main-img {
+    left: -77px;
+    position: absolute;
+    top: 29px;
+    transform: scale(1);
+    z-index: 1;
+  }
+  .img-area-desktop .img-shadow {
+    left: -525px;
+    position: absolute;
+    top: -315px;
+    transform: scale(0.9);
+    z-index: 0;
+  }
+  .box-img {
+    display: block;
+    left: -94px;
+    position: absolute;
+    top: 175px;
+  }
+  .questions-area {
+    padding-right: 5%;
+    padding-top: 20px;
+    width: 50%;
+  }
+  .question-box {
+    font-size: 16px;
+    min-height: 46px;
+  }
+  .answer {
+    padding-bottom: 15px;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 40px 0;
+    text-align: left;
+  }
+  .question-btn {
+    min-height: 46px;
+  }
+}
+@media (min-width: 1300px) {
+  .faq-box {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 1600px) {
+  .faq-box {
+    transform: scale(1.2);
+  }
 }
